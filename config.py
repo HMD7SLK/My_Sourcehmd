@@ -78,9 +78,8 @@ db_mem = {}
 DURATION_LIMIT = 9999
 SONG_DOWNLOAD_DURATION = 9999
 
-# Banned Users
+# Users
 BANNED_USERS = filters.user()
 
-# Extra
-AUTO_DOWNLOADS_CLEAR = False
-AUTO_SUGGESTION_MODE = False
+# Misc
+AUTO_CLEAN = False
