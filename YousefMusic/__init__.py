@@ -15,7 +15,6 @@ from YousefMusic.platforms.Youtube import YouTubeAPI
 
 YouTube = YouTubeAPI()
 
-# Compatibility variables for old plugins
 Apple = None
 Resso = None
 SoundCloud = None
