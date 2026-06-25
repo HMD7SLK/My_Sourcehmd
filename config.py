@@ -28,9 +28,11 @@ UPSTREAM_BRANCH = os.getenv(
     "UPSTREAM_BRANCH",
     "master"
 )
-# Support
+
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
 CH_US = os.getenv("CH_US", "ZThon")
 
 adminlist = {}
 confirmer = {}
+
+autoclean = []
