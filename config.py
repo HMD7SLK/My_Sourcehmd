@@ -72,7 +72,7 @@ SUPPORT_CHANNEL = "https://t.me/Zelzal_Music"
 # Yafa
 YAFA_CHANNEL = "ZThon"
 YAFA_NAME = "ZThon"
-CHANNEL_SUDO = OWNER_ID
+CHANNEL_SUDO = None
 
 # Spotify
 SPOTIFY_CLIENT_ID = ""
