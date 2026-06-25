@@ -2,29 +2,19 @@
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-from YousefMusic.core.bot import Zelzaly
-from YousefMusic.core.dir import dirr
-from YousefMusic.core.git import git
-from YousefMusic.core.userbot import Userbot
-from YousefMusic.misc import dbb, heroku
-
-from .logging import LOGGER
-
-dirr()
-git()
-dbb()
-heroku()
-
-app = Zelzaly()
-userbot = Userbot()
-
-
-from .platforms import *
-
-Apple = AppleAPI()
-Carbon = CarbonAPI()
-SoundCloud = SoundAPI()
-Spotify = SpotifyAPI()
-Resso = RessoAPI()
-Telegram = TeleAPI()
-YouTube = YouTubeAPI()
+from YousefMusic import app
+from YousefMusic.utils.database import (
+    get_served_chats,
+    get_served_users,
+    get_client,
+    set_must,
+    get_must,
+    del_must,
+    get_must_ch,
+    set_must_ch,
+    get_active_chats,
+    remove_active_video_chat,
+    remove_active_chat,
+    set_bot_name,
+    get_bot_name
+)
