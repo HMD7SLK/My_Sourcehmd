@@ -27,4 +27,3 @@ youtube-search
 
 pyrogram==2.0.106
 py-tgcalls==2.2.6
-ntgcalls==1.0.0
