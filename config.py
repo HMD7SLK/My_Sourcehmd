@@ -28,3 +28,9 @@ UPSTREAM_BRANCH = os.getenv(
     "UPSTREAM_BRANCH",
     "master"
 )
+# Support
+SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
+
+# Admin cache
+adminlist = {}
+confirmer = {}
