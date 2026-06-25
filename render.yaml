@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: black-music-bot
+    env: docker
+    plan: free
+    autoDeploy: true
+
