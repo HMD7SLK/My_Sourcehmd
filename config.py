@@ -1,4 +1,5 @@
 import os
+from pyrogram import filters
 
 API_ID = int(os.getenv("API_ID", 0))
 API_HASH = os.getenv("API_HASH", "")
@@ -31,13 +32,18 @@ UPSTREAM_BRANCH = os.getenv(
 
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
 CH_US = os.getenv("CH_US", "ZThon")
-from pyrogram import filters
 
 adminlist = {}
 confirmer = {}
+votemode = {}
 
 autoclean = []
 
 YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
+
+STREAM_IMG_URL = YOUTUBE_IMG_URL
+SOUNCLOUD_IMG_URL = YOUTUBE_IMG_URL
+TELEGRAM_AUDIO_URL = YOUTUBE_IMG_URL
+TELEGRAM_VIDEO_URL = YOUTUBE_IMG_URL
 
 BANNED_USERS = filters.user()
