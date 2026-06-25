@@ -34,8 +34,10 @@ async def play_live_stream(client, CallbackQuery, _):
     )
     try:
         details, track_id = await YouTube.track(vidid, True)
-    except:
-        return await mystic.edit_text(_["play_3"])
+    except Exception as e:
+    return await mystic.edit_text(
+        f"ERROR\n\n{type(e).__name__}\n\n{e}"
+    )
     ffplay = True if fplay == "f" else None
     if not details["duration_min"]:
         try:
