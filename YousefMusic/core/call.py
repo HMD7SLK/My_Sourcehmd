@@ -320,9 +320,9 @@ class Call(PyTgCalls):
             )
         except NoActiveGroupCall:
             raise AssistantErr(_["call_8"])
-        except AlreadyJoinedError:
+        except Exception:
             raise AssistantErr(_["call_9"])
-        except TelegramServerError:
+        except Exception::
             raise AssistantErr(_["call_10"])
         await add_active_chat(chat_id)
         await music_on(chat_id)
