@@ -60,3 +60,31 @@ SUPPORT_GROUP = "https://t.me/ZThon"
 SUPPORT_CHANNEL = "https://t.me/Zelzal_Music"
 
 BANNED_USERS = filters.user()
+# Images
+START_IMG_URL = YOUTUBE_IMG_URL
+PLAYLIST_IMG_URL = YOUTUBE_IMG_URL
+GLOBAL_IMG_URL = YOUTUBE_IMG_URL
+
+# Auto Leave
+AUTO_LEAVING_ASSISTANT = False
+
+# Yafa
+YAFA_CHANNEL = "ZThon"
+YAFA_NAME = "ZThon"
+CHANNEL_SUDO = OWNER_ID
+
+# Spotify
+SPOTIFY_CLIENT_ID = ""
+SPOTIFY_CLIENT_SECRET = ""
+
+# Runtime
+lyrical = {}
+db_mem = {}
+
+# Limits
+DURATION_LIMIT = 9999
+SONG_DOWNLOAD_DURATION = 9999
+
+# Misc
+AUTO_DOWNLOADS_CLEAR = False
+AUTO_SUGGESTION_MODE = False
