@@ -36,3 +36,5 @@ adminlist = {}
 confirmer = {}
 
 autoclean = []
+
+YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
