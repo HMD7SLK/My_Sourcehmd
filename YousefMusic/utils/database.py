@@ -60,17 +60,6 @@ async def get_assistant_number(chat_id: int) -> str:
     return assistant
 
 
-async def get_client(assistant: int):
-    if int(assistant) == 1:
-        return userbot.one
-    elif int(assistant) == 2:
-        return userbot.two
-    elif int(assistant) == 3:
-        return userbot.three
-    elif int(assistant) == 4:
-        return userbot.four
-    elif int(assistant) == 5:
-        return userbot.five
 
 
 async def set_assistant_new(chat_id, number):
