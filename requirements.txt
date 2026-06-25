@@ -26,4 +26,3 @@ py-tgcalls==0.9.7
 git+https://github.com/KurimuzonAkuma/pyrogram@dev
 youtube-search-python
 youtube-search
-pykeyboard
