@@ -1,42 +1,34 @@
 import asyncio
-
-
-import asyncio
 import aiohttp
-from pyrogram.enums import ChatMembersFilter
-from pyrogram.enums import ChatMemberStatus
-from pyrogram import enums
 import config
-
 import os
 import time
-import requests
-from config import START_IMG_URL
-from pyrogram import filters
 import random
-from pyrogram import Client
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup
-from YousefMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
-from YousefMusic import app
-from random import  choice, randint
-
-from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
-
-
-
-
-
+import requests
 import re
 import sys
-from os import getenv
 
+from os import getenv
+from random import choice, randint
 from dotenv import load_dotenv
+
+from pyrogram import Client, filters, enums
+from pyrogram.enums import ChatMembersFilter, ChatMemberStatus
+from pyrogram.types import (
+    Message,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton,
+    ReplyKeyboardMarkup,
+    ChatMemberUpdated,
+)
+
+from config import START_IMG_URL
+from YousefMusic import app
 
 load_dotenv()
 
-OWNER_ID = 2012962190
+OWNER_ID = 8282175722
 OWNER = getenv("OWNER")
-
 
 
 @app.on_message(filters.command(["مطور السورس", "• مطور السورس •","ياسر"], ""))
