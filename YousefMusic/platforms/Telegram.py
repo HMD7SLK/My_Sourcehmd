@@ -10,9 +10,6 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-async def down_load():
-    from YousefMusic import app
-    ...
 from YousefMusic.utils.formatters import (
     check_duration,
     convert_bytes,
@@ -98,6 +95,7 @@ class TeleAPI:
         return file_name
 
     async def download(self, _, message, mystic, fname):
+        from YousefMusic import app
         lower = [0, 8, 17, 38, 64, 77, 96]
         higher = [5, 10, 20, 40, 66, 80, 99]
         checker = [5, 10, 20, 40, 66, 80, 99]
