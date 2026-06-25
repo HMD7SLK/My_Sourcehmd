@@ -5,7 +5,19 @@
 import random
 from typing import Dict, List, Union
 
-from YousefMusic import userbot
+async def get_client(assistant: int):
+    from YousefMusic import userbot
+
+    if int(assistant) == 1:
+        return userbot.one
+    elif int(assistant) == 2:
+        return userbot.two
+    elif int(assistant) == 3:
+        return userbot.three
+    elif int(assistant) == 4:
+        return userbot.four
+    elif int(assistant) == 5:
+        return userbot.five
 from YousefMusic.core.mongo import mongodb
 
 authdb = mongodb.adminauth
