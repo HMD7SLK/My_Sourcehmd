@@ -5,7 +5,10 @@
 import socket
 import time
 
-import heroku3
+def heroku():
+    global HAPP
+    HAPP = None
+    LOGGER(__name__).info("Heroku Disabled")
 from pyrogram import filters
 
 import config
