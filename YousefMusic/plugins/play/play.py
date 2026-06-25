@@ -458,8 +458,10 @@ async def play_music(client, CallbackQuery, _):
     )
     try:
         details, track_id = await YouTube.track(vidid, True)
-    except:
-        return await mystic.edit_text(_["play_3"])
+    except Exception as e:
+    return await mystic.edit_text(
+        f"ERROR\n\n{type(e).__name__}\n\n{e}"
+    )
     if details["duration_min"]:
         duration_sec = time_to_seconds(details["duration_min"])
         if duration_sec > config.DURATION_LIMIT:
