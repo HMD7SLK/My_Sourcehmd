@@ -4,11 +4,15 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+    apt-get install -y \
     ffmpeg \
     git \
-    gcc && \
-    rm -rf /var/lib/apt/lists/*
+    gcc \
+    curl
+
+# Install NodeJS 20
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
+    apt-get install -y nodejs
 
 COPY . /app
 WORKDIR /app
