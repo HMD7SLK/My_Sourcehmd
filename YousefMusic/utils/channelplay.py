@@ -2,11 +2,12 @@
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 #▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
-from YousefMusic import app
 from YousefMusic.utils.database import get_cmode
 
 
 async def get_channeplayCB(_, command, CallbackQuery):
+    from YousefMusic import app
+
     if command == "c":
         chat_id = await get_cmode(CallbackQuery.message.chat.id)
         if chat_id is None:
@@ -14,6 +15,7 @@ async def get_channeplayCB(_, command, CallbackQuery):
                 return await CallbackQuery.answer(_["setting_7"], show_alert=True)
             except:
                 return
+
         try:
             channel = (await app.get_chat(chat_id)).title
         except:
@@ -24,4 +26,5 @@ async def get_channeplayCB(_, command, CallbackQuery):
     else:
         chat_id = CallbackQuery.message.chat.id
         channel = None
+
     return chat_id, channel
