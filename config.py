@@ -7,7 +7,10 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", 0))
+
+STRING1 = os.getenv("STRING1", "")
 STRING_SESSION = os.getenv("STRING_SESSION", "")
+
 LOGGER_ID = int(os.getenv("LOGGER_ID", 0))
 
 GIT_TOKEN = os.getenv("GIT_TOKEN", "")
