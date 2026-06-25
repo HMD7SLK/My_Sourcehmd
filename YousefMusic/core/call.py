@@ -21,7 +21,10 @@ from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQuality
 from pytgcalls.types.stream import StreamAudioEnded
 
 import config
-from YousefMusic import LOGGER, YouTube, app
+from YousefMusic import LOGGER, app
+from YousefMusic.platforms.Youtube import YouTubeAPI
+
+YouTube = YouTubeAPI()
 from YousefMusic.misc import db
 from YousefMusic.utils.database import (
     add_active_chat,
