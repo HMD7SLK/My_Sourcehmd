@@ -9,8 +9,14 @@ from YousefMusic.core.userbot import Userbot
 
 from .logging import LOGGER
 
+# YouTube API
+from YousefMusic.platforms.Youtube import YouTubeAPI
+
 dirr()
 git()
 
 app = Zelzaly()
 userbot = Userbot()
+
+# Export YouTube object for plugins
+YouTube = YouTubeAPI()
