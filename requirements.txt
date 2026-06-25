@@ -22,7 +22,8 @@ speedtest-cli
 unidecode
 wget
 yt-dlp
-py-tgcalls==0.9.7
-git+https://github.com/KurimuzonAkuma/pyrogram@dev
 youtube-search-python
 youtube-search
+
+pyrogram==2.0.106
+py-tgcalls==2.1.0
