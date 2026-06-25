@@ -4,7 +4,7 @@ import asyncio
 import config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import VideoChatEnded, Message
-from pytgcalls import PyTgCalls, StreamType
+from pytgcalls import PyTgCalls
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from YousefMusic.core.call import Zelzaly
 from YousefMusic.utils.database import *
