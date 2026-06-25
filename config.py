@@ -7,13 +7,16 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "")
 MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
 
 OWNER_ID = int(os.getenv("OWNER_ID", 0))
-
-STRING1 = os.getenv("STRING1", "")
-STRING2 = os.getenv("STRING2", "")
-STRING_SESSION = os.getenv("STRING_SESSION", "")
-
 LOGGER_ID = int(os.getenv("LOGGER_ID", 0))
 
+# Assistant Sessions
+STRING1 = os.getenv("STRING1", "")
+STRING2 = os.getenv("STRING2", "")
+STRING3 = os.getenv("STRING3", "")
+STRING4 = os.getenv("STRING4", "")
+STRING5 = os.getenv("STRING5", "")
+
+# Git Updater
 GIT_TOKEN = os.getenv("GIT_TOKEN", "")
 
 UPSTREAM_REPO = os.getenv(
