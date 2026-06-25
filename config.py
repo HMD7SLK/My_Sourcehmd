@@ -42,6 +42,9 @@ autoclean = []
 lyrical = {}
 db_mem = {}
 
+checker = {}
+upvoters = {}
+
 # Images
 YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
 
@@ -82,6 +85,33 @@ SONG_DOWNLOAD_DURATION = 9999
 # Users
 BANNED_USERS = filters.user()
 
-# Extra Variables
-checker = {}
-upvoters = {}
+# Export Variables
+__all__ = [
+    "API_ID",
+    "API_HASH",
+    "BOT_TOKEN",
+    "MONGO_DB_URI",
+    "OWNER_ID",
+    "LOGGER_ID",
+    "STRING1",
+    "STRING2",
+    "STRING3",
+    "STRING4",
+    "STRING5",
+    "SUPPORT_CHAT",
+    "CH_US",
+    "STREAM_IMG_URL",
+    "SOUNDCLOUD_IMG_URL",
+    "TELEGRAM_AUDIO_URL",
+    "TELEGRAM_VIDEO_URL",
+    "START_IMG_URL",
+    "PING_IMG_URL",
+    "PLAYLIST_IMG_URL",
+    "GLOBAL_IMG_URL",
+    "STATS_IMG_URL",
+    "BANNED_USERS",
+    "adminlist",
+    "confirmer",
+    "votemode",
+    "autoclean",
+]
