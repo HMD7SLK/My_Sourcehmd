@@ -7,7 +7,8 @@ import asyncio
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from YousefMusic import YouTube, app
+from YousefMusic import app
+from YousefMusic.core.call import YouTube
 from YousefMusic.core.call import Zelzaly
 from YousefMusic.misc import SUDOERS, db
 from YousefMusic.utils.database import (
