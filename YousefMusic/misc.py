@@ -15,6 +15,7 @@ from .logging import LOGGER
 SUDOERS = filters.user()
 
 HAPP = None
+db = {}
 _boot_ = time.time()
 
 
