@@ -31,6 +31,7 @@ UPSTREAM_BRANCH = os.getenv(
 
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
 CH_US = os.getenv("CH_US", "ZThon")
+from pyrogram import filters
 
 adminlist = {}
 confirmer = {}
@@ -39,4 +40,4 @@ autoclean = []
 
 YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
 
-BANNED_USERS = set()
+BANNED_USERS = filters.user()
