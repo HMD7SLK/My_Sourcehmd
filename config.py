@@ -1,4 +1,4 @@
-from YousefMusic import app
+
 from YousefMusic.utils.database import (
     get_served_chats,
     get_served_users,
