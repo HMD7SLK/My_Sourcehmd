@@ -312,19 +312,16 @@ class Call(PyTgCalls):
                 if video
                 else AudioPiped(link, audio_parameters=HighQualityAudio())
             )
-try:
-    await assistant.join_group_call(
-        chat_id,
-        stream,
-        stream_type=StreamType().pulse_stream,
-    )
-except NoActiveGroupCall:
-    raise AssistantErr(_["call_8"])
-except Exception:
-    raise AssistantErr(_["call_9"])
-    raise AssistantErr(_["call_9"])
-        except Exception::
-            raise AssistantErr(_["call_10"])
+        try:
+            await assistant.join_group_call(
+                chat_id,
+                stream,
+                stream_type=StreamType().pulse_stream,
+            )
+        except NoActiveGroupCall:
+            raise AssistantErr(_["call_8"])
+        except Exception:
+            raise AssistantErr(_["call_9"])
         await add_active_chat(chat_id)
         await music_on(chat_id)
         if video:
