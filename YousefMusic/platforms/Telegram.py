@@ -10,7 +10,9 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from YousefMusic import app
+async def down_load():
+    from YousefMusic import app
+    ...
 from YousefMusic.utils.formatters import (
     check_duration,
     convert_bytes,
