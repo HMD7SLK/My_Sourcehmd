@@ -1,7 +1,3 @@
-#▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ ʑᴇʟᴢᴀʟ_ᴍᴜsɪᴄ ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-#▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯  T.me/ZThon   ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-#▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒✯ T.me/Zelzal_Music ✯▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
-
 from YousefMusic.core.bot import Zelzaly
 from YousefMusic.core.dir import dirr
 from YousefMusic.core.git import git
@@ -18,3 +14,11 @@ userbot = Userbot()
 from YousefMusic.platforms.Youtube import YouTubeAPI
 
 YouTube = YouTubeAPI()
+
+Compatibility variables for old plugins
+
+Apple = None
+Resso = None
+SoundCloud = None
+Spotify = None
+Telegram = None
