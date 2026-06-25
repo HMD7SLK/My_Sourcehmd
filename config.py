@@ -10,30 +10,33 @@ MONGO_DB_URI = os.getenv("MONGO_DB_URI", "")
 OWNER_ID = int(os.getenv("OWNER_ID", 0))
 LOGGER_ID = int(os.getenv("LOGGER_ID", 0))
 
-# Assistant Sessions
+Assistant Sessions
+
 STRING1 = os.getenv("STRING1", "")
 STRING2 = os.getenv("STRING2", "")
 STRING3 = os.getenv("STRING3", "")
 STRING4 = os.getenv("STRING4", "")
 STRING5 = os.getenv("STRING5", "")
 
-# Git
+Git
+
 GIT_TOKEN = os.getenv("GIT_TOKEN", "")
 
 UPSTREAM_REPO = os.getenv(
-    "UPSTREAM_REPO",
-    "https://github.com/HMD7SLK/My_Sourcehmd"
+"UPSTREAM_REPO",
+"https://github.com/HMD7SLK/My_Sourcehmd"
 )
 
 UPSTREAM_BRANCH = os.getenv(
-    "UPSTREAM_BRANCH",
-    "master"
+"UPSTREAM_BRANCH",
+"master"
 )
 
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
 CH_US = os.getenv("CH_US", "ZThon")
 
-# Runtime Dicts
+Runtime Dicts
+
 adminlist = {}
 confirmer = {}
 votemode = {}
@@ -45,7 +48,8 @@ db_mem = {}
 checker = {}
 upvoters = {}
 
-# Images
+Images
+
 YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
 
 STREAM_IMG_URL = YOUTUBE_IMG_URL
@@ -59,66 +63,80 @@ PLAYLIST_IMG_URL = YOUTUBE_IMG_URL
 GLOBAL_IMG_URL = YOUTUBE_IMG_URL
 STATS_IMG_URL = YOUTUBE_IMG_URL
 
-# Assistant Settings
+Assistant Settings
+
 AUTO_LEAVING_ASSISTANT = False
 AUTO_DOWNLOADS_CLEAR = False
 AUTO_SUGGESTION_MODE = False
 AUTO_CLEAN = False
 
-# Support
+Support
+
 SUPPORT_GROUP = "https://t.me/ZThon"
 SUPPORT_CHANNEL = "https://t.me/Zelzal_Music"
 
-# Yafa
+Yafa
+
 YAFA_CHANNEL = "ZThon"
 YAFA_NAME = "ZThon"
 CHANNEL_SUDO = OWNER_ID
 
-# Spotify
+Spotify
+
 SPOTIFY_CLIENT_ID = ""
 SPOTIFY_CLIENT_SECRET = ""
 
-# Limits
+Limits
+
 DURATION_LIMIT = 9999
 SONG_DOWNLOAD_DURATION = 9999
 
-# Users
+Users
+
 BANNED_USERS = filters.user()
 
-# Export Variables
-# Export Variables
-__all__ = [
-    "API_ID",
-    "API_HASH",
-    "BOT_TOKEN",
-    "MONGO_DB_URI",
-    "OWNER_ID",
-    "LOGGER_ID",
-    "STRING1",
-    "STRING2",
-    "STRING3",
-    "STRING4",
-    "STRING5",
-    "SUPPORT_CHAT",
-    "CH_US",
+def time_to_seconds(time):
+stringt = str(time)
+return sum(
+int(x) * 60 ** i
+for i, x in enumerate(reversed(stringt.split(":")))
+)
 
-    "STREAM_IMG_URL",
-    "SOUNDCLOUD_IMG_URL",
-    "TELEGRAM_AUDIO_URL",
-    "TELEGRAM_VIDEO_URL",
-    "START_IMG_URL",
-    "PING_IMG_URL",
-    "PLAYLIST_IMG_URL",
-    "GLOBAL_IMG_URL",
-    "STATS_IMG_URL",
+all = [
+"API_ID",
+"API_HASH",
+"BOT_TOKEN",
+"MONGO_DB_URI",
+"OWNER_ID",
+"LOGGER_ID",
+"STRING1",
+"STRING2",
+"STRING3",
+"STRING4",
+"STRING5",
+"SUPPORT_CHAT",
+"CH_US",
 
-    "BANNED_USERS",
+"STREAM_IMG_URL",
+"SOUNDCLOUD_IMG_URL",
+"TELEGRAM_AUDIO_URL",
+"TELEGRAM_VIDEO_URL",
+"START_IMG_URL",
+"PING_IMG_URL",
+"PLAYLIST_IMG_URL",
+"GLOBAL_IMG_URL",
+"STATS_IMG_URL",
 
-    "adminlist",
-    "confirmer",
-    "votemode",
-    "autoclean",
+"BANNED_USERS",
 
-    "checker",
-    "upvoters",
+"adminlist",
+"confirmer",
+"votemode",
+"autoclean",
+
+"time_to_seconds",
+
+"checker",
+"upvoters",
+
 ]
