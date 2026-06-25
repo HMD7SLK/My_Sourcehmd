@@ -12,8 +12,10 @@ app = Zelzaly()
 userbot = Userbot()
 
 from YousefMusic.platforms.Youtube import YouTubeAPI
+from YousefMusic.platforms.Carbon import CarbonAPI
 
 YouTube = YouTubeAPI()
+Carbon = CarbonAPI()
 
 Apple = None
 Resso = None
