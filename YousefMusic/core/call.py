@@ -278,8 +278,8 @@ class Call(PyTgCalls):
     async def stream_call(self, link):
         assistant = await group_assistant(self, config.LOGGER_ID)
         await assistant.join_group_call(
-            config.LOGGER_ID,
-            AudioVideoPiped(link),
+    config.LOGGER_ID,
+    AudioVideoPiped(link),
             stream_type=StreamType().pulse_stream,
         )
         await asyncio.sleep(0.2)
