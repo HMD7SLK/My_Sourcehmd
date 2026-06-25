@@ -32,6 +32,7 @@ from YousefMusic.utils.stream.autoclear import auto_clean
 from YousefMusic.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
+    STREAM_IMG_URL,
     TELEGRAM_AUDIO_URL,
     TELEGRAM_VIDEO_URL,
     adminlist,
