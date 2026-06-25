@@ -17,7 +17,7 @@ STRING3 = os.getenv("STRING3", "")
 STRING4 = os.getenv("STRING4", "")
 STRING5 = os.getenv("STRING5", "")
 
-# Git Updater
+# Git
 GIT_TOKEN = os.getenv("GIT_TOKEN", "")
 
 UPSTREAM_REPO = os.getenv(
@@ -33,10 +33,14 @@ UPSTREAM_BRANCH = os.getenv(
 SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "ZThon")
 CH_US = os.getenv("CH_US", "ZThon")
 
+# Runtime Dicts
 adminlist = {}
 confirmer = {}
 votemode = {}
 autoclean = []
+
+lyrical = {}
+db_mem = {}
 
 # Images
 YOUTUBE_IMG_URL = "https://telegra.ph/file/cc0a0c2d8f5e4f0d3f5d1.jpg"
@@ -56,6 +60,7 @@ STATS_IMG_URL = YOUTUBE_IMG_URL
 AUTO_LEAVING_ASSISTANT = False
 AUTO_DOWNLOADS_CLEAR = False
 AUTO_SUGGESTION_MODE = False
+AUTO_CLEAN = False
 
 # Support
 SUPPORT_GROUP = "https://t.me/ZThon"
@@ -70,10 +75,6 @@ CHANNEL_SUDO = OWNER_ID
 SPOTIFY_CLIENT_ID = ""
 SPOTIFY_CLIENT_SECRET = ""
 
-# Runtime
-lyrical = {}
-db_mem = {}
-
 # Limits
 DURATION_LIMIT = 9999
 SONG_DOWNLOAD_DURATION = 9999
@@ -81,5 +82,6 @@ SONG_DOWNLOAD_DURATION = 9999
 # Users
 BANNED_USERS = filters.user()
 
-# Misc
-AUTO_CLEAN = False
+# Extra Variables
+checker = {}
+upvoters = {}
