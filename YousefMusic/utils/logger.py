@@ -4,12 +4,13 @@
 
 from pyrogram.enums import ParseMode
 
-from YousefMusic import app
 from YousefMusic.utils.database import is_on_off
 from config import LOGGER_ID
 
 
 async def play_logs(message, streamtype):
+    from YousefMusic import app
+
     if await is_on_off(2):
         logger_text = f"""
 <b>- Playing History </b>
@@ -23,7 +24,8 @@ async def play_logs(message, streamtype):
 <b>- Chat Id :</b> <code>{message.chat.id}</code>
 
 <b>- Played :</b> {message.text.split(None, 1)[1]}
-<b>- Operating type  :</b> {streamtype}"""
+<b>- Operating type :</b> {streamtype}
+"""
         if message.chat.id != LOGGER_ID:
             try:
                 await app.send_message(
@@ -34,4 +36,3 @@ async def play_logs(message, streamtype):
                 )
             except:
                 pass
-        return
