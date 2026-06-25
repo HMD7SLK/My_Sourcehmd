@@ -1,0 +1,6 @@
+Suggested Render upgrade pack:
+- Added render.yaml
+- Cleaned requirements list (removed redundant asyncio)
+- Updated motor/pymongo versions suggestion
+- Keep Docker deployment on Render
+
