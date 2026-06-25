@@ -32,7 +32,6 @@ from YousefMusic.utils.stream.autoclear import auto_clean
 from YousefMusic.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
-    STREAM_IMG_URL,
     TELEGRAM_AUDIO_URL,
     TELEGRAM_VIDEO_URL,
     adminlist,
@@ -328,7 +327,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             elif videoid == "soundcloud":
                 button = stream_markup(_, chat_id)
                 run = await CallbackQuery.message.reply_photo(
-                    photo=SOUNCLOUD_IMG_URL
+                    photo=STREAM_IMG_URL
                     if str(streamtype) == "audio"
                     else TELEGRAM_VIDEO_URL,
                     caption=_["stream_1"].format(
