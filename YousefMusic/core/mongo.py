@@ -11,8 +11,10 @@ from ..logging import LOGGER
 LOGGER("ميــوزك  اكس").info("جـارِ الاتصـال بقاعـدة البيانـات . . .")
 try:
     _mongo_async_ = AsyncIOMotorClient(MONGO_DB_URI)
-    mongodb = _mongo_async_.Anon
+    mongodb = _mongo_async_["YousefMusic"]
     LOGGER("ميــوزك اكس").info("تم الاتصـال بقاعـدة البيانـات ...✓")
-except:
-    LOGGER(__name__).error("حدث خطأ اثناء الاتصال بقاعدة البيانات.")
+except Exception as e:
+    import traceback
+    traceback.print_exc()
+    LOGGER(__name__).exception(e)
     exit()
